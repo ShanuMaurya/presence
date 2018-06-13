@@ -1,6 +1,6 @@
 const DiscordRPC = require("discord-rpc");
 
-const ClientId = 'ree';
+const ClientId = '456423224960352268';
 
 DiscordRPC.register(ClientId);
 
@@ -9,12 +9,12 @@ const rpc = new DiscordRPC.Client({ transport: 'ipc' });
 rpc.on('ready', () => {
   console.log("ready");
   rpc.setActivity({
-    details: `test`,
-    state: 'test',
-    // largeImageKey: 'test',
-    // largeImageText: 'test',
-    // smallImageKey: 'test',
-    // smallImageText: 'test',
+    details: `D3D`,
+    state: 'Playing',
+    largeImageKey: 'hr2',
+    largeImageText: 'Modification of Petrol ',
+    smallImageKey: 'hr',
+    smallImageText: 'not done yet',
     instance: false,
   });
 });
